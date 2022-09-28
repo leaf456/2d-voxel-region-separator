@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<script src="keys.js"></script>
+		<script src="index.js"></script>
+		<title>2d voxel mesher and region seperator</title>
+	</head>
+	<body onload="start()" style="margin: 0px;">
+		<div style="position: absolute; right: 5px; top: 0px; padding: 0px; margin: 0px;">
+			<h2 style="margin: 0px">Press any key to draw</h2>
+			<input type="checkbox" style="display: inline;" checked oninput="updateoptions()" id="checkbox-wireframe"></input><p style="display: inline">Wireframe</p><br>
+			<input type="checkbox" style="display: inline;" oninput="updateoptions()" id="checkbox-solid"></input><p style="display: inline">Solid</p><br>
+		</div>
+		<canvas id="canvas" width="1000" height="600">
+		</canvas>
+	</body>
+</html>
